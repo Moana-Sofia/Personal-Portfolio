@@ -1,0 +1,31 @@
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home .content {
+  display: flex;
+  align-items: flex-start; /* aligns top of text and image */
+  gap: 40px; /* space between text and image */
+}
+
+.home .text {
+  flex: 1; /* text takes up remaining space */
+}
+
+.home .image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.resume-header img {
+  width: 120px;   /* width for layout */
+  height: auto;   /* auto keeps aspect ratio */
+  border-radius: 50%; /* optional: keeps circular shape */
+  object-fit: cover;  /* fills the circle nicely without distortion */
+}
